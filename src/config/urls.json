@@ -3,5 +3,8 @@
   "dev": "/subject/dev",
   "admin": "/subject/admin",
   "docs": "/assets/docs",
-  "lang": "/lang"
+  "lang": "/lang",
+  "twitter": "https://twitter.com/KodenekoFront",
+  "github": "https://github.com/kode-neko",
+  "mail": "mailto:gema.mo.est@gmail.com"
 }
