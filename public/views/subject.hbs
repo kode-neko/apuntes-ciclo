@@ -22,7 +22,7 @@
     <h3><i class="bi bi-file-earmark-text me-2"></i>{{t "subject.notes"}}</h3>
     <ul class="list-group rounded-2">
       {{#each docs}}
-        <a href="{{urlSet "docs"}}/{{../subject}}/{{file}}.html"><li class="list-group-item list-group-item-action list-group-item-primary">{{name}}</li></a>
+        <a href="/docs/{{../subject}}/{{file}}" target="_blank"><li class="list-group-item list-group-item-action list-group-item-primary">{{name}}</li></a>
       {{/each}}
     </ul>
   </div>
@@ -30,7 +30,7 @@
     <h3><i class="bi bi-file-easel me-2"></i>{{t "subject.slides"}}</h3>
     <ul class="list-group rounded-2">
       {{#each slides}}
-        <a href="{{url}}"><li class="list-group-item list-group-item-action list-group-item-primary">{{name}}</li></a>
+        <a href="{{url}}" target="_blank"><li class="list-group-item list-group-item-action list-group-item-primary">{{name}}</li></a>
       {{/each}}
     </ul>
   </div>

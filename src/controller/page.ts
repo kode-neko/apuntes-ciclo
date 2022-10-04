@@ -1,5 +1,7 @@
 import { Request, Response } from 'express';
+import i18next from 'i18next';
 import {
+  urls,
   docsAdmin, slidesAdmin, docsDev, slidesDev, INote,
 } from '../config';
 
@@ -23,7 +25,21 @@ function getSubject(req: Request, res: Response): void {
   });
 }
 
+function getDoc(req: Request, res: Response): void {
+  const { type, name } = req.params;
+  const urlsObj = (urls as Record<string, string>);
+  const url = `${urlsObj.docs}/${type}/${name}.html`;
+  res.render('docs', { url });
+}
+
+function getChangeLang(req: Request, res: Response): void {
+  const { lang } = req.params;
+  i18next.changeLanguage(lang as string).then(() => res.redirect('/'));
+}
+
 export {
   getMain,
   getSubject,
+  getDoc,
+  getChangeLang,
 };
