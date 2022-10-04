@@ -1,0 +1,6 @@
+{
+  "main": "/",
+  "dev": "/subject/dev",
+  "admin": "/subject/admin",
+  "docs": "/assets/docs"
+}

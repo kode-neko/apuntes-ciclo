@@ -17,5 +17,9 @@
     "english": "Inglés",
     "spanish": "Español",
     "enter": "Acceder"
+  },
+  "subject": {
+    "notes": "Apuntes",
+    "slides": "Presentaciones"
   }
 }

@@ -1,3 +1,4 @@
 export {
-  getExample, getChangeLang, getTemplate, getSubject,
-} from './example';
+  getMain,
+  getSubject,
+} from './page';
