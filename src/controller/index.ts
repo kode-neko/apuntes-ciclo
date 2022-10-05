@@ -1,1 +1,6 @@
-export { getExample, getTemplate } from './example';
+export {
+  getMain,
+  getSubject,
+  getDoc,
+  getChangeLang,
+} from './page';
