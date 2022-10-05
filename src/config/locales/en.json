@@ -1,14 +1,14 @@
 {
   "title": {
     "main": "Computer Notes",
-    "dev": "Instroduction to Development",
+    "dev": "Introduction to Development",
     "admin": "Linux Administration"
   },
   "desc": {
     "title": "Welcome!",
-    "main": "I'm Kodeneko, computer enginering skilled in frontal web development. I'm finishing a Master of Teaching to become an instructor in a tech college. In this web I want to publish some topics which I created during my master.",
-    "dev": "Encontrarás presentaciones y apuntes para la introducción en la programación",
-    "admin": "Descubrirás una seríe de presentaciones y manuales para una introducción básica para Linux"
+    "main": "I'm Kodeneko, computer enginering skilled in frontal web development. In this web I want to publish some topics which I created for tech college studentds.",
+    "dev": "You'll find slides and notes for development introduction.",
+    "admin": "You'll find slides and notes for basic GNU/Linux admin."
   },
   "btn": {
     "change-lang": "Language"
@@ -17,5 +17,6 @@
     "english": "English",
     "spanish": "Spanish",
     "enter": "Enter"
-  }
+  },
+  "credentials": "Kodeneko - 2022"
 }
