@@ -10,7 +10,8 @@
     "build:watch": "tsc --watch --project tsconfig.json",
     "prod": "node ./public/src -m prod",
     "dev": "concurrently \"npm run build:watch\" \"npm run start:nodemon\"",
-    "test": "jest"
+    "test": "jest",
+    "heruko": ""
   },
   "repository": {
     "type": "git",
