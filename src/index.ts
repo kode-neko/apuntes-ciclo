@@ -6,9 +6,16 @@ import {
 i18nextConfig();
 
 try {
-  envSelect(getEnv());
-  console.log('port', process.env.SERVER_PORT);
-  app.listen(process.env.SERVER_PORT);
+  let port: string;
+  const env = getEnv();
+  if (env === 'heroku') {
+    port = process.env.PORT as string;
+  } else {
+    envSelect(env);
+    port = process.env.SERVER_PORT as string;
+  }
+  console.log('port', port);
+  app.listen(port);
 } catch (err) {
   console.error(err);
 }

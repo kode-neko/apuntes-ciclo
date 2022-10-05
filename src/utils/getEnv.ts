@@ -7,7 +7,7 @@ function getEnv() {
       alias: 'mode',
       default: 'dev',
       demandOption: true,
-      choices: ['dev', 'prod'],
+      choices: ['dev', 'prod', 'heroku'],
       describe: 'Selecciona modo despliegue',
       type: 'string',
     })
