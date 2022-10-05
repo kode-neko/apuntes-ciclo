@@ -25,7 +25,6 @@
   "homepage": "https://github.com/kode-neko/apuntes-ciclo#readme",
   "devDependencies": {
     "@faker-js/faker": "^7.5.0",
-    "@types/express": "^4.17.14",
     "@types/jest": "^29.1.0",
     "@types/sinon": "^10.0.13",
     "@types/supertest": "^2.0.12",
@@ -50,9 +49,11 @@
   },
   "dependencies": {
     "@eslint/create-config": "^0.3.1",
+    "@types/express": "^4.17.14",
     "@types/hbs": "^4.0.1",
     "@types/mongoose": "^5.11.97",
     "@types/node": "^18.7.23",
+    "@types/yargs": "^17.0.13",
     "bootstrap": "^5.2.1",
     "bootstrap-icons": "^1.9.1",
     "dotenv": "^16.0.3",
