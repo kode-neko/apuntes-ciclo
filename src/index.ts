@@ -1,23 +1,21 @@
-import yargs from 'yargs';
-import { hideBin } from 'yargs/helpers';
 import app from './server';
-import { console, envSelect } from './utils';
+import {
+  console, envSelect, getEnv, i18nextConfig,
+} from './utils';
 
-const argsv = yargs(hideBin(process.argv))
-  .option('m', {
-    alias: 'mode',
-    default: 'dev',
-    demandOption: true,
-    choices: ['dev', 'prod'],
-    describe: 'Seleccioan modo despliegue',
-    type: 'string',
-  })
-  .argv as { [s: string]: unknown };
+i18nextConfig();
 
 try {
-  const env = argsv.m as string;
-  envSelect(env);
-  app.listen(process.env.SERVER_PORT);
+  let port: string;
+  const env = getEnv();
+  if (env === 'heroku') {
+    port = process.env.PORT as string;
+  } else {
+    envSelect(env);
+    port = process.env.SERVER_PORT as string;
+  }
+  console.log('port', port);
+  app.listen(port);
 } catch (err) {
   console.error(err);
 }

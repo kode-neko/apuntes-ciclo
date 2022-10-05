@@ -1,0 +1,26 @@
+{
+  "title": {
+    "main": "Apuntes FP Informática",
+    "dev": "Introducción a la Programación",
+    "admin": "Adminsitración Linux"
+  },
+  "desc": {
+    "title": "¡Bienvenido!",
+    "main": "Soy Kodeneko, ingeniera informática especializada en el desarrollo web frontal. En esta web quiero publicar algunos temarios que preparé para alumnos de FP.",
+    "dev": "Encontrarás presentaciones y apuntes para la introducción en la programación",
+    "admin": "Descubrirás una seríe de presentaciones y manuales para una introducción básica en la administración de GNU/Linux"
+  },
+  "btn": {
+    "change-lang": "Idioma"
+  },
+  "labels": {
+    "english": "Inglés",
+    "spanish": "Español",
+    "enter": "Acceder"
+  },
+  "subject": {
+    "notes": "Apuntes",
+    "slides": "Presentaciones"
+  },
+  "credentials": "Kodeneko - 2022"
+}
