@@ -7,9 +7,8 @@ const server_1 = __importDefault(require("./server"));
 const utils_1 = require("./utils");
 (0, utils_1.i18nextConfig)();
 try {
-    (0, utils_1.envSelect)((0, utils_1.getEnv)());
-    utils_1.console.log('port', process.env.SERVER_PORT);
-    server_1.default.listen(process.env.PORT || process.env.SERVER_PORT);
+    utils_1.console.log('port', process.env.PORT);
+    server_1.default.listen(process.env.PORT || '3000');
 }
 catch (err) {
     utils_1.console.error(err);
